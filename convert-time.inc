@@ -5,7 +5,7 @@
 *
 *   - Модуль предоставляет следующие функции:
 *
-*       * ConvertTime(seconds, iterations = 0)
+*       * ConvertTime(seconds, iterations = 1)
 *           - Конвертирует количество секунд в удобочитаемый формат времени
 *           Параметры:
 *           - seconds: Количество секунд для конвертации
@@ -52,7 +52,7 @@ static const UnitNames[][][] = {
 const MAX_SIZE_UNIT_TIME = sizeof UnitTimes;
 const MIN_SIZE_ITERATION = 0;
 
-stock ConvertTime(seconds, iterations = 0)
+stock ConvertTime(seconds, iterations = 1)
 {
     new string[128], 
         count, index, type;
